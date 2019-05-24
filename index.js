@@ -1,11 +1,9 @@
 module.exports = {
   extends: [
     "eslint-config-airbnb",
-    "plugin:react-redux/recommended"
   ].map(require.resolve),
 
   plugins: [
-    "react-redux",
     "prefer-arrow",
     "no-loops"
   ],
