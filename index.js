@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     "eslint-config-airbnb",
     "plugin:react-redux/recommended"
-  ].map(requre.resolve),
+  ].map(require.resolve),
 
   plugins: [
     "react-redux",
