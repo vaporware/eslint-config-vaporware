@@ -84,5 +84,12 @@ module.exports = {
 
     // Prefer double quotes to single quotes (but backticks are okay)
     "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+
+    // Allow usage of variables before they're defined
+    // (useful for declaring styles underneath JSX)
+    "no-use-before-define": "off",
+
+    // Allow JSX to exist in files that don't have the .jsx extension
+    "react/jsx-filename-extension": "off",
   },
 }
