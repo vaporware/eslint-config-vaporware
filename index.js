@@ -5,7 +5,8 @@ module.exports = {
 
   plugins: [
     "prefer-arrow",
-    "no-loops"
+    "no-loops",
+    "react-hooks"
   ],
 
   parser: "babel-eslint",
@@ -91,5 +92,9 @@ module.exports = {
 
     // Allow JSX to exist in files that don't have the .jsx extension
     "react/jsx-filename-extension": "off",
+
+    // https://reactjs.org/docs/hooks-rules.html
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
 }

@@ -16,7 +16,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-prefer-arrow": "^1.1.5",
-    "eslint-plugin-react": "^7.14.3"
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0"
   },
   "peerDependencies": {
     "eslint": ">=6"
