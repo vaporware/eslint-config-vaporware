@@ -83,6 +83,20 @@ Also add `.vscode/settings.json` to the root of your project, and paste these va
 
 This sets up auto-formatting on save, prettier <-> eslint integration, specifies Prettier as the default code formatter, and excludes unnecessary folders from VS Code's file watcher.
 
+### ESLint / Prettier Conflicts
+
+If you experience conflicts between eslint's requirements and Prettier's formatting, I recommend using this [Prettier ESLint Config](https://github.com/prettier/eslint-config-prettier#installation). After following its installation instructions, you should end up with an `.eslintrc.*` containing:
+
+```json
+{
+  "extends": [
+    "eslint-config-vaporware",
+    "prettier",
+    "prettier/react",
+  ]
+}
+```
+
 ## VS Code per-project extension recommendations
 To have VS Code suggest plugins when a new user opens your project, you can add a `.vscode/extensions.json` file. Here's an example which will suggest the above plugins:
 
